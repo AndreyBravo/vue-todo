@@ -1,8 +1,8 @@
 <template>
   <ul>
     <TodoItem
-      v-for="(todo, key) in todos"
-      :key="key"
+      v-for="todo in todos"
+      :key="todo.id"
       :todo="todo"
       @removeTodo="removeTodo"
     />
